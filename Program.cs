@@ -1,5 +1,5 @@
-﻿//declara as variáveis do tipo double
-double n1, uni, dez, cen;
+﻿//declara as variáveis do tipo int
+int n1, uni, dez, cen;
 
 //exibe a mensagem '---Decomposição Decimal---' no console
 Console.WriteLine("---Decomposição Decimal---");
@@ -9,9 +9,9 @@ Console.WriteLine();
 
 // Exibe a mensagem "Digite seu Primeiro Nome:" no console
 Console.WriteLine("Digite um número inteiro: ");
-// Lê o valor digitado pelo usuário e converte para o tipo double
+// Lê o valor digitado pelo usuário e converte para o tipo int
 //atribuindo-o a variável 'n1'
-n1 = Convert.ToDouble(Console.ReadLine());
+n1 = Convert.ToInt32(Console.ReadLine());
 
 //exibe a mensagem "O número n1 possui:" (onde n1 é
 //o número que o usuário digitou)
@@ -28,7 +28,7 @@ Console.WriteLine($"{uni} unidade(s)");
 
 //calcula o resultado da divisão inteira do 'n1' por 10
 //o resultado é atribuído a variável dez
-dez = n1 / 10;
+dez = (n1 / 10) % 10;
 //exibe o valor da dezena no console
 Console.WriteLine($"{dez} dezena(s)");
 
